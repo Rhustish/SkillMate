@@ -5,6 +5,9 @@ import googleIco from "../../assets/googleIco.png"
 import phoneIco from "../../assets/phoneIco.png"
 import React from 'react';
 
+const login = ()=>{
+  console.log("login");
+}
 
 export default function AuthInit() {
 
@@ -14,7 +17,7 @@ export default function AuthInit() {
         <Image source={icon} style={styles.topIcon} />
         <Text style={styles.tnc}>By clicking “Sign in” , you agree with our Terms. Learn how we process your data in our Privacy Policy and Cookies Policy .</Text>
         <View style={styles.buttonList}>
-          <Pressable onPressOut={promptAsync}>
+          <Pressable onPressOut={login}>
             <View style={styles.button}>
               <Image source={googleIco} style={styles.inButtonIcon} />
               <Text style={styles.buttonText}>Sign In With Google</Text>
