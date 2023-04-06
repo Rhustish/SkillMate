@@ -20,7 +20,14 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#000000"
+      },
+      "package": "com.bra.SkillMate"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "05cdf067-760b-4309-8f19-5b2a539a9162"
       }
-    }
+    },
+    "scheme": "skillmate"
   }
 }
