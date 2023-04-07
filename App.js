@@ -8,7 +8,7 @@ export default function App() {
   const [authOK , setAuthOK] = useState(true)
 
   return (
-    <NavigationContainer>
+    <NavigationContainer >
       {authOK ? <HomeTabNav /> : <AuthStackNavigator/>}
       <StatusBar style="auto" />
     </NavigationContainer>

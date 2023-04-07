@@ -1,7 +1,7 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import HomePage from "./HomePage";
-import SearchnResult from "./SearchnResult";
+import SearchMP from "./search/SearchMP";
 import UserAccount from "./UserAccount";
 import Chats from "./Chats";
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -18,7 +18,9 @@ export default function HomeTabNav(){
                 tabBarStyle:{
                     backgroundColor: 'rgba(100,101,102,1)',
                     borderTopLeftRadius: 6,
-                    borderTopRightRadius:6
+                    borderTopRightRadius:6,
+                    overflow:"hidden",
+                    position:"absolute"
                 },
                 tabBarActiveTintColor:"#30ffc8",
                 tabBarInactiveTintColor:"#ffffff",
@@ -41,7 +43,7 @@ export default function HomeTabNav(){
             })}
             >
             <BottomTabNav.Screen name="Home" component={HomePage} />
-            <BottomTabNav.Screen name="Search" component={SearchnResult}/>
+            <BottomTabNav.Screen name="Search" component={SearchMP}/>
             <BottomTabNav.Screen name = "Chats" component={Chats} />
             <BottomTabNav.Screen name="You" component={UserAccount} />
         </BottomTabNav.Navigator>
