@@ -1,4 +1,6 @@
-{
+import "dotenv/config"
+
+export default{
   "expo": {
     "name": "SkillMate",
     "slug": "SkillMate",
@@ -26,7 +28,14 @@
     "extra": {
       "eas": {
         "projectId": "05cdf067-760b-4309-8f19-5b2a539a9162"
-      }
+      },
+      apiKey: process.env.API_KEY,
+      authDomain: process.env.AUTH_DOMAIN,
+      projectID : process.env.PROJECT_ID,
+      storageBucket : process.env.STORAGE_BUCKET,
+      messagingSenderID : process.env.MESSAGING_SENDER_ID,
+      appID : process.env.APP_ID
+
     },
     "scheme": "skillmate"
   }

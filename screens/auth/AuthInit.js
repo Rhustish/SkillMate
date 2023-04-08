@@ -8,7 +8,6 @@ import React from 'react';
 const login = ()=>{
   console.log("login");
 }
-
 export default function AuthInit() {
 
   return (

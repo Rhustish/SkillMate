@@ -2,7 +2,7 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import HomePage from "./HomePage";
 import SearchMP from "./search/SearchMP";
-import UserAccount from "./UserAccount";
+import UserAccount from "./accountPage/UserAccount";
 import Chats from "./Chats";
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
