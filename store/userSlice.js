@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { ActionSheetIOS } from "react-native";
 
 const initialState = {
-    authOK : false
+    authOK : true
 };
 
 export const userSlice = createSlice({
