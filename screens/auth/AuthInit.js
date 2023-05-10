@@ -1,14 +1,10 @@
 import { View, Text, StyleSheet, ImageBackground, Image, Pressable, } from 'react-native'
 import authBG from "../../assets/authBG.jpg"
 import icon from "../../assets/icon.png"
-import googleIco from "../../assets/googleIco.png"
 import phoneIco from "../../assets/phoneIco.png"
 import React from 'react';
 
-const login = ()=>{
-  console.log("login");
-}
-export default function AuthInit() {
+export default function AuthInit({navigation}) {
 
   return (
     <View style={styles.container}>
@@ -16,13 +12,7 @@ export default function AuthInit() {
         <Image source={icon} style={styles.topIcon} />
         <Text style={styles.tnc}>By clicking “Sign in” , you agree with our Terms. Learn how we process your data in our Privacy Policy and Cookies Policy .</Text>
         <View style={styles.buttonList}>
-          <Pressable onPressOut={login}>
-            <View style={styles.button}>
-              <Image source={googleIco} style={styles.inButtonIcon} />
-              <Text style={styles.buttonText}>Sign In With Google</Text>
-            </View>
-          </Pressable>
-          <Pressable onPressOut={login}>
+          <Pressable onPressOut={()=> navigation.navigate("Login")}>
             <View style={styles.button} >
               <Image source={phoneIco} style={styles.inButtonIcon} />
               <Text style={styles.buttonText}>Sign In With Phone</Text>

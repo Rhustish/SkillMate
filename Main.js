@@ -1,19 +1,21 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import { StatusBar } from 'expo-status-bar';
 import AuthStackNavigator from './screens/auth/AuthStack';
 import HomeTabNav from './screens/main/HomeTabNav';
 import { NavigationContainer } from '@react-navigation/native';
-import { useSelector } from 'react-redux';
+import UserContext from './context/userContext';
+
 
 export default function Main() {
 
-    const authOK = useSelector(state=>state.user.authOK)
-    console.log(authOK);
+  const {authOK} = useContext(UserContext)
 
   return (
+
     <NavigationContainer >
         {authOK ? <HomeTabNav /> : <AuthStackNavigator />}
         <StatusBar style="auto" />
     </NavigationContainer>
+
   )
 }

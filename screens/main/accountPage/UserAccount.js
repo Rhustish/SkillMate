@@ -24,7 +24,7 @@ export default function UserAccount(props) {
     <View style={styles.container}>
       <View style={styles.imageView} >
         <Image source={userpng} style={styles.image} />
-        <Text style={styles.greet}> Hello {props.userName} </Text>
+        <Text style={styles.greet}> Hello Bhavy {props.userName} </Text>
         <Text style={styles.greet}> Have a great Day </Text>
       </View>
       <View style={styles.menuList}>
